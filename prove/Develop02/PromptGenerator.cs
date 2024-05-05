@@ -10,18 +10,14 @@ class PromptGenerator{
         _prompts.Add("Who did I help today?");
         _prompts.Add("How well was I able to accomplish my daily tasks?");
     }
-    // public string _filename = "";
-    // public JournalLog ()
-    // {
-
-    // }
+ 
 
     public string GetRandomPrompt()
     {
         Random random = new Random();
         int _index = random.Next(1,_prompts.Count());
         return _prompts[_index];
-        // Console.WriteLine(_prompts[_index]);
+        
     }
 
 
